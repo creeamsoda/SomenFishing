@@ -37,6 +37,11 @@
 		2C5C471126B4F08E005E8C85 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C5C471026B4F08E005E8C85 /* libzlib.a */; };
 		2C6906D82298140F00A427D0 /* engine in Resources */ = {isa = PBXBuildFile; fileRef = 2C6906D72298140F00A427D0 /* engine */; };
 		2CD8412C283263B2005013A6 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD8412B283263B2005013A6 /* libboost_filesystem.a */; };
+		9FAAF9922D01FC5200A3325E /* Somen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF9912D01FC5200A3325E /* Somen.cpp */; };
+		9FAAF9942D029E4700A3325E /* Generater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF9932D029E3E00A3325E /* Generater.cpp */; };
+		9FAAF9972D0314F800A3325E /* Drawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF9962D0314F400A3325E /* Drawer.cpp */; };
+		9FAAF99D2D0320B600A3325E /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF99C2D0320B600A3325E /* InputManager.cpp */; };
+		9FAAF9A02D03EDE600A3325E /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAF99F2D03EDE500A3325E /* Player.cpp */; };
 		9FB073AB2CFD8A5E00006D13 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9FB073AA2CFD8A5E00006D13 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +78,16 @@
 		2C5C471026B4F08E005E8C85 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzlib.a; path = ../../lib/macOS/zlib/libzlib.a; sourceTree = "<group>"; };
 		2C6906D72298140F00A427D0 /* engine */ = {isa = PBXFileReference; lastKnownFileType = folder; name = engine; path = App/engine; sourceTree = "<group>"; };
 		2CD8412B283263B2005013A6 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = ../../lib/macOS/boost/libboost_filesystem.a; sourceTree = "<group>"; };
+		9FAAF98F2D01F9CD00A3325E /* Generater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Generater.h; sourceTree = "<group>"; };
+		9FAAF9902D01FC5200A3325E /* Somen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Somen.h; sourceTree = "<group>"; };
+		9FAAF9912D01FC5200A3325E /* Somen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Somen.cpp; sourceTree = "<group>"; };
+		9FAAF9932D029E3E00A3325E /* Generater.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Generater.cpp; sourceTree = "<group>"; };
+		9FAAF9952D0314E400A3325E /* Drawer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawer.h; sourceTree = "<group>"; };
+		9FAAF9962D0314F400A3325E /* Drawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Drawer.cpp; sourceTree = "<group>"; };
+		9FAAF99B2D03207C00A3325E /* InputManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		9FAAF99C2D0320B600A3325E /* InputManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		9FAAF99E2D03EDDF00A3325E /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		9FAAF99F2D03EDE500A3325E /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		9FB073AA2CFD8A5E00006D13 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +153,16 @@
 		2C1778981CE0AA7C00BB8AD0 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				9FAAF99F2D03EDE500A3325E /* Player.cpp */,
+				9FAAF99E2D03EDDF00A3325E /* Player.h */,
+				9FAAF99C2D0320B600A3325E /* InputManager.cpp */,
+				9FAAF99B2D03207C00A3325E /* InputManager.h */,
+				9FAAF9962D0314F400A3325E /* Drawer.cpp */,
+				9FAAF9952D0314E400A3325E /* Drawer.h */,
+				9FAAF9932D029E3E00A3325E /* Generater.cpp */,
+				9FAAF98F2D01F9CD00A3325E /* Generater.h */,
+				9FAAF9902D01FC5200A3325E /* Somen.h */,
+				9FAAF9912D01FC5200A3325E /* Somen.cpp */,
 				2C1778991CE0AA7C00BB8AD0 /* Main.cpp */,
 			);
 			path = src;
@@ -246,6 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAAF9972D0314F800A3325E /* Drawer.cpp in Sources */,
+				9FAAF9A02D03EDE600A3325E /* Player.cpp in Sources */,
+				9FAAF99D2D0320B600A3325E /* InputManager.cpp in Sources */,
+				9FAAF9942D029E4700A3325E /* Generater.cpp in Sources */,
+				9FAAF9922D01FC5200A3325E /* Somen.cpp in Sources */,
 				2C17789A1CE0AA7C00BB8AD0 /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
