@@ -7,9 +7,19 @@ InputManager::InputManager(uint8 playerIndex){
         //KeyBoardからの入力を受け付ける
     }
     m_playerIndex = playerIndex;
+    rStickX = 0;
+    rStickY = 0;
+    lStickX = 0;
+    lStickY = 0;
+    aButton = false;
+    aButtonDown = false;
+    rTrigger = false;
+    rTriggerDown = false;
 }
 
 void InputManager::InputUpdate(){
+    m_aButtonLastFrame = aButton;
+    m_rTriggerLastFrame = rTrigger;
     if (ProController(m_playerIndex).isConnected() == true){
         InputConvertProCon();
     }
@@ -19,6 +29,23 @@ void InputManager::InputUpdate(){
     }else{
         InputConvertKey();
     }
+    aButtonDown = JudgeButtonDown(aButton,m_aButtonLastFrame);
+    rTriggerDown = JudgeButtonDown(rTrigger,m_rTriggerLastFrame);
+}
+
+bool InputManager::JudgeButtonDown(bool button, bool buttonLastFrame){
+    if(button == true){
+        if(buttonLastFrame == false){
+            //現在入力あり、前フレーム入力なしならbuttonDown
+            return true;
+        }else{
+            //現在入力あり、前フレーム入力ありならbutton長押し
+            return false;
+        }
+    }else{
+        //現在入力なしならボタン入力なし
+        return false;
+    }
 }
 
 void InputManager::InputConvertProCon(){
@@ -26,6 +53,7 @@ void InputManager::InputConvertProCon(){
     lStickX = input.LStick().x;
     lStickY = input.LStick().y;
     aButton = input.buttonA.pressed();
+    rTrigger = input.buttonZR.pressed();
 }
 
 void InputManager::InputConvertGPad(){
@@ -46,7 +74,10 @@ void InputManager::InputConvertGPad(){
 }
 
 void InputManager::InputConvertKey(){
-    
+    aButton = KeyC.pressed(); //CircleのC
+    rTrigger = KeyR.pressed();
+    lStickX = KeyToOneZero(KeyD)-KeyToOneZero(KeyA);
+    lStickY = KeyToOneZero(KeyS)-KeyToOneZero(KeyW);
 }
 
 /*std::tuple<std::array<uint8,2>,std::array<uint8,2>>*/ void InputManager::InputConvertDShock(std::array<uint8,2>& buttonIndexes, std::array<uint8,2>& stickIndexes){
@@ -56,4 +87,12 @@ void InputManager::InputConvertKey(){
     stickIndexes = {0,1};
     
     //return {buttonIndexes,stickIndexes};
+}
+
+int8 InputManager::KeyToOneZero(Input Key){
+    if(Key.pressed() == true){
+        return 1;
+    }else{
+        return 0;
+    }
 }

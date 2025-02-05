@@ -46,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C1778841CE0A9EA00BB8AD0 /* empty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = empty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1778841CE0A9EA00BB8AD0 /* SomenFishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SomenFishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1778921CE0A9EA00BB8AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1778991CE0AA7C00BB8AD0 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		2C1778A21CE0B65500BB8AD0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		2C1778851CE0A9EA00BB8AD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C1778841CE0A9EA00BB8AD0 /* empty.app */,
+				2C1778841CE0A9EA00BB8AD0 /* SomenFishing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,9 +205,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C1778831CE0A9EA00BB8AD0 /* empty */ = {
+		2C1778831CE0A9EA00BB8AD0 /* SomenFishing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C1778931CE0A9EA00BB8AD0 /* Build configuration list for PBXNativeTarget "empty" */;
+			buildConfigurationList = 2C1778931CE0A9EA00BB8AD0 /* Build configuration list for PBXNativeTarget "SomenFishing" */;
 			buildPhases = (
 				2C1778801CE0A9EA00BB8AD0 /* Sources */,
 				2C1778811CE0A9EA00BB8AD0 /* Frameworks */,
@@ -217,9 +217,9 @@
 			);
 			dependencies = (
 			);
-			name = empty;
+			name = SomenFishing;
 			productName = empty;
-			productReference = 2C1778841CE0A9EA00BB8AD0 /* empty.app */;
+			productReference = 2C1778841CE0A9EA00BB8AD0 /* SomenFishing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C17787D1CE0A9D800BB8AD0 /* Build configuration list for PBXProject "empty" */;
+			buildConfigurationList = 2C17787D1CE0A9D800BB8AD0 /* Build configuration list for PBXProject "SomenFishing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C1778831CE0A9EA00BB8AD0 /* empty */,
+				2C1778831CE0A9EA00BB8AD0 /* SomenFishing */,
 			);
 		};
 /* End PBXProject section */
@@ -520,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C17787D1CE0A9D800BB8AD0 /* Build configuration list for PBXProject "empty" */ = {
+		2C17787D1CE0A9D800BB8AD0 /* Build configuration list for PBXProject "SomenFishing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C17787E1CE0A9D800BB8AD0 /* Debug */,
@@ -529,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C1778931CE0A9EA00BB8AD0 /* Build configuration list for PBXNativeTarget "empty" */ = {
+		2C1778931CE0A9EA00BB8AD0 /* Build configuration list for PBXNativeTarget "SomenFishing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C1778941CE0A9EA00BB8AD0 /* Debug */,

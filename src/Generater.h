@@ -16,6 +16,7 @@ class Generater
 private:
     double frequency;
     double passedTime;
+    uint32 m_somenIndex;
     int32 genePosYMax;
     int32 genePosYMin;
 public:
